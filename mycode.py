@@ -1,7 +1,6 @@
 import pandas as pd
 import os
 
-
 # Create a sample dataframe with the columns below
 data = {"Name" : ["Kevin", "Jim", "Dwight"],
         "Age" : [20, 30, 21],
@@ -26,5 +25,4 @@ file_path = os.path.join(data_dir, "sampledata.csv")
 
 # Save the dataframe to a CSV file, including column names
 df.to_csv(file_path, index = False)
-
 print(f"File saved to specified path")
